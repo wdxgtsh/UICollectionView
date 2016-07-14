@@ -54,6 +54,7 @@
 		446189D51D3787E600F9C67E /* ShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 446189D41D3787E600F9C67E /* ShopCell.m */; };
 		446189D81D378AF700F9C67E /* ShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 446189D71D378AF700F9C67E /* ShopModel.m */; };
 		446189DB1D378DF000F9C67E /* ZLWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 446189DA1D378DF000F9C67E /* ZLWaterFlowLayout.m */; };
+		446189E11D3799F500F9C67E /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 446189E01D3799F500F9C67E /* 1.plist */; };
 		EA397CDBEF6D1649EDF232B1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A0CA63549515F1D969E81B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -140,6 +141,7 @@
 		446189D71D378AF700F9C67E /* ShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopModel.m; path = other/ShopModel.m; sourceTree = "<group>"; };
 		446189D91D378DF000F9C67E /* ZLWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZLWaterFlowLayout.h; path = other/ZLWaterFlowLayout.h; sourceTree = "<group>"; };
 		446189DA1D378DF000F9C67E /* ZLWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZLWaterFlowLayout.m; path = other/ZLWaterFlowLayout.m; sourceTree = "<group>"; };
+		446189E01D3799F500F9C67E /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
 		788CBD3A0F29E05FCE29F1CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A3A0CA63549515F1D969E81B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -222,6 +224,7 @@
 		187EDA571C78650600D8604B /* other */ = {
 			isa = PBXGroup;
 			children = (
+				446189E01D3799F500F9C67E /* 1.plist */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				187ED9C11C78503B00D8604B /* 01.jpg in Resources */,
 				187ED9CA1C78503B00D8604B /* 18.jpg in Resources */,
 				187ED9DA1C78503B00D8604B /* 06.jpg in Resources */,
+				446189E11D3799F500F9C67E /* 1.plist in Resources */,
 				187ED9CE1C78503B00D8604B /* 21.jpg in Resources */,
 				187ED9D21C78503B00D8604B /* 25.jpg in Resources */,
 				187ED9C71C78503B00D8604B /* 15.jpg in Resources */,
