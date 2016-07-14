@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "Masonry.h"
 #import "MyCollectionViewController.h"
+#import "WaterFlowViewController.h"
 @interface RootViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property(nonatomic, strong)UITableView * mainTableView;
@@ -51,7 +52,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -60,12 +61,12 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellID];
     }
-    cell.textLabel.text =  indexPath.row == 0 ? @"照片浏览器一" : (indexPath.row == 1 ? @"照片浏览器二" : @"照片浏览器三") ;
+    cell.textLabel.text =  indexPath.row == 0 ? @"照片浏览器一" : (indexPath.row == 1 ? @"照片浏览器二" : indexPath.row == 2 ? @"照片浏览器三" : @"瀑布流") ;
     return cell;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    return @"照片浏览器";
+    return @"UICollectionViewLayout";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -77,6 +78,13 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.row == 3) {
+        WaterFlowViewController * waterFlowVC = [[WaterFlowViewController alloc] init];
+        [self.navigationController pushViewController:waterFlowVC animated:YES];
+        return;
+    }
+    
     MyCollectionViewController * collectionVC = [[MyCollectionViewController alloc] init];
     switch (indexPath.row) {
         case 0://照片浏览器一
@@ -88,7 +96,6 @@
         case 2://照片浏览器三
             collectionVC.type = ZLCollectionViewLayoutLine;
             break;
-            
         default:
             break;
     }

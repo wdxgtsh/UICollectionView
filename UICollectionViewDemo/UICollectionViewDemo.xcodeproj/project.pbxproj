@@ -50,6 +50,10 @@
 		18B352EE1C77777C008FF2EB /* UICollectionViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B352ED1C77777C008FF2EB /* UICollectionViewDemoTests.m */; };
 		18B352F91C77777C008FF2EB /* UICollectionViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B352F81C77777C008FF2EB /* UICollectionViewDemoUITests.m */; };
 		18B353081C778078008FF2EB /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B353071C778078008FF2EB /* MyCollectionViewController.m */; };
+		446189D21D37870800F9C67E /* WaterFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446189D11D37870800F9C67E /* WaterFlowViewController.m */; };
+		446189D51D3787E600F9C67E /* ShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 446189D41D3787E600F9C67E /* ShopCell.m */; };
+		446189D81D378AF700F9C67E /* ShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 446189D71D378AF700F9C67E /* ShopModel.m */; };
+		446189DB1D378DF000F9C67E /* ZLWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 446189DA1D378DF000F9C67E /* ZLWaterFlowLayout.m */; };
 		EA397CDBEF6D1649EDF232B1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A0CA63549515F1D969E81B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -73,12 +77,12 @@
 /* Begin PBXFileReference section */
 		187ED9951C7846FF00D8604B /* ZLImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLImageCell.h; sourceTree = "<group>"; };
 		187ED9961C7846FF00D8604B /* ZLImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLImageCell.m; sourceTree = "<group>"; };
-		187ED9981C78498800D8604B /* ZLCollectionViewCircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCollectionViewCircleLayout.h; sourceTree = "<group>"; };
-		187ED9991C78498800D8604B /* ZLCollectionViewCircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCollectionViewCircleLayout.m; sourceTree = "<group>"; };
-		187ED99B1C7849C300D8604B /* ZLCollectionViewStackLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCollectionViewStackLayout.h; sourceTree = "<group>"; };
-		187ED99C1C7849C300D8604B /* ZLCollectionViewStackLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCollectionViewStackLayout.m; sourceTree = "<group>"; };
-		187ED99E1C784A8500D8604B /* ZLCollectionViewLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCollectionViewLineLayout.h; sourceTree = "<group>"; };
-		187ED99F1C784A8500D8604B /* ZLCollectionViewLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCollectionViewLineLayout.m; sourceTree = "<group>"; };
+		187ED9981C78498800D8604B /* ZLCollectionViewCircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZLCollectionViewCircleLayout.h; path = other/ZLCollectionViewCircleLayout.h; sourceTree = "<group>"; };
+		187ED9991C78498800D8604B /* ZLCollectionViewCircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZLCollectionViewCircleLayout.m; path = other/ZLCollectionViewCircleLayout.m; sourceTree = "<group>"; };
+		187ED99B1C7849C300D8604B /* ZLCollectionViewStackLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZLCollectionViewStackLayout.h; path = other/ZLCollectionViewStackLayout.h; sourceTree = "<group>"; };
+		187ED99C1C7849C300D8604B /* ZLCollectionViewStackLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZLCollectionViewStackLayout.m; path = other/ZLCollectionViewStackLayout.m; sourceTree = "<group>"; };
+		187ED99E1C784A8500D8604B /* ZLCollectionViewLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZLCollectionViewLineLayout.h; path = other/ZLCollectionViewLineLayout.h; sourceTree = "<group>"; };
+		187ED99F1C784A8500D8604B /* ZLCollectionViewLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZLCollectionViewLineLayout.m; path = other/ZLCollectionViewLineLayout.m; sourceTree = "<group>"; };
 		187ED9A21C78503B00D8604B /* 00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 00.jpg; sourceTree = "<group>"; };
 		187ED9A31C78503B00D8604B /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
 		187ED9A41C78503B00D8604B /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
@@ -128,6 +132,14 @@
 		18B353061C778078008FF2EB /* MyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewController.h; sourceTree = "<group>"; };
 		18B353071C778078008FF2EB /* MyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewController.m; sourceTree = "<group>"; };
 		3A4D88CC102AF774C3EC09D0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		446189D01D37870800F9C67E /* WaterFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowViewController.h; sourceTree = "<group>"; };
+		446189D11D37870800F9C67E /* WaterFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowViewController.m; sourceTree = "<group>"; };
+		446189D31D3787E600F9C67E /* ShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCell.h; sourceTree = "<group>"; };
+		446189D41D3787E600F9C67E /* ShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCell.m; sourceTree = "<group>"; };
+		446189D61D378AF700F9C67E /* ShopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShopModel.h; path = other/ShopModel.h; sourceTree = "<group>"; };
+		446189D71D378AF700F9C67E /* ShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopModel.m; path = other/ShopModel.m; sourceTree = "<group>"; };
+		446189D91D378DF000F9C67E /* ZLWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZLWaterFlowLayout.h; path = other/ZLWaterFlowLayout.h; sourceTree = "<group>"; };
+		446189DA1D378DF000F9C67E /* ZLWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZLWaterFlowLayout.m; path = other/ZLWaterFlowLayout.m; sourceTree = "<group>"; };
 		788CBD3A0F29E05FCE29F1CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A3A0CA63549515F1D969E81B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -201,6 +213,8 @@
 			children = (
 				187ED9951C7846FF00D8604B /* ZLImageCell.h */,
 				187ED9961C7846FF00D8604B /* ZLImageCell.m */,
+				446189D31D3787E600F9C67E /* ShopCell.h */,
+				446189D41D3787E600F9C67E /* ShopCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -208,24 +222,21 @@
 		187EDA571C78650600D8604B /* other */ = {
 			isa = PBXGroup;
 			children = (
-				187ED9981C78498800D8604B /* ZLCollectionViewCircleLayout.h */,
-				187ED9991C78498800D8604B /* ZLCollectionViewCircleLayout.m */,
-				187ED99B1C7849C300D8604B /* ZLCollectionViewStackLayout.h */,
-				187ED99C1C7849C300D8604B /* ZLCollectionViewStackLayout.m */,
-				187ED99E1C784A8500D8604B /* ZLCollectionViewLineLayout.h */,
-				187ED99F1C784A8500D8604B /* ZLCollectionViewLineLayout.m */,
 			);
 			path = other;
 			sourceTree = "<group>";
 		};
-		187EDA581C78652000D8604B /* control */ = {
+		187EDA581C78652000D8604B /* controller */ = {
 			isa = PBXGroup;
 			children = (
 				18B352D91C77777B008FF2EB /* RootViewController.h */,
 				18B352DA1C77777B008FF2EB /* RootViewController.m */,
 				18B353061C778078008FF2EB /* MyCollectionViewController.h */,
 				18B353071C778078008FF2EB /* MyCollectionViewController.m */,
+				446189D01D37870800F9C67E /* WaterFlowViewController.h */,
+				446189D11D37870800F9C67E /* WaterFlowViewController.m */,
 			);
+			name = controller;
 			path = control;
 			sourceTree = "<group>";
 		};
@@ -254,7 +265,9 @@
 		18B352D21C77777B008FF2EB /* UICollectionViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				187EDA581C78652000D8604B /* control */,
+				446189DF1D37950C00F9C67E /* layout */,
+				446189DE1D3794CD00F9C67E /* model */,
+				187EDA581C78652000D8604B /* controller */,
 				187EDA571C78650600D8604B /* other */,
 				187EDA551C7864E600D8604B /* view */,
 				187ED9A11C78503B00D8604B /* meinv */,
@@ -293,6 +306,30 @@
 				18B352FA1C77777C008FF2EB /* Info.plist */,
 			);
 			path = UICollectionViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		446189DE1D3794CD00F9C67E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				446189D71D378AF700F9C67E /* ShopModel.m */,
+				446189D61D378AF700F9C67E /* ShopModel.h */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		446189DF1D37950C00F9C67E /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				187ED9981C78498800D8604B /* ZLCollectionViewCircleLayout.h */,
+				187ED9991C78498800D8604B /* ZLCollectionViewCircleLayout.m */,
+				187ED99B1C7849C300D8604B /* ZLCollectionViewStackLayout.h */,
+				187ED99C1C7849C300D8604B /* ZLCollectionViewStackLayout.m */,
+				187ED99E1C784A8500D8604B /* ZLCollectionViewLineLayout.h */,
+				187ED99F1C784A8500D8604B /* ZLCollectionViewLineLayout.m */,
+				446189D91D378DF000F9C67E /* ZLWaterFlowLayout.h */,
+				446189DA1D378DF000F9C67E /* ZLWaterFlowLayout.m */,
+			);
+			name = layout;
 			sourceTree = "<group>";
 		};
 		76CA303BE088D4A7017342E3 /* Pods */ = {
@@ -524,9 +561,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B353081C778078008FF2EB /* MyCollectionViewController.m in Sources */,
+				446189DB1D378DF000F9C67E /* ZLWaterFlowLayout.m in Sources */,
 				187ED99D1C7849C300D8604B /* ZLCollectionViewStackLayout.m in Sources */,
 				187ED9A01C784A8500D8604B /* ZLCollectionViewLineLayout.m in Sources */,
+				446189D51D3787E600F9C67E /* ShopCell.m in Sources */,
+				446189D21D37870800F9C67E /* WaterFlowViewController.m in Sources */,
 				18B352DB1C77777B008FF2EB /* RootViewController.m in Sources */,
+				446189D81D378AF700F9C67E /* ShopModel.m in Sources */,
 				187ED99A1C78498800D8604B /* ZLCollectionViewCircleLayout.m in Sources */,
 				187ED9971C7846FF00D8604B /* ZLImageCell.m in Sources */,
 				18B352D81C77777B008FF2EB /* AppDelegate.m in Sources */,
@@ -670,6 +711,7 @@
 			baseConfigurationReference = 3A4D88CC102AF774C3EC09D0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = UICollectionViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhaolei-dubai-163.com.UICollectionViewDemo";
@@ -682,6 +724,7 @@
 			baseConfigurationReference = 788CBD3A0F29E05FCE29F1CC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = UICollectionViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhaolei-dubai-163.com.UICollectionViewDemo";
